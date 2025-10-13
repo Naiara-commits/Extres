@@ -21,5 +21,6 @@ public class GENERADOR_PLATOS : MonoBehaviour
     void Generar()
     {
         Instantiate(obj[Random.Range(0,obj.Length)], transform.position, Quaternion.identity);
+        Invoke("Generar", Random.Range(tiempoMin,tiempoMax));
     }
 }
