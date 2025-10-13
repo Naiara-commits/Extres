@@ -8,5 +8,14 @@ public class MainMenuScript : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
 
     }
+    public void Credits()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
    
 }
