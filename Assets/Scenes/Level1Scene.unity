@@ -266,9 +266,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1137692435}
   - component: {fileID: 1137692434}
-  - component: {fileID: 1137692432}
   - component: {fileID: 1137692436}
   - component: {fileID: 1137692437}
+  - component: {fileID: 1137692438}
   m_Layer: 0
   m_Name: Camarero
   m_TagString: Untagged
@@ -276,19 +276,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1137692432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1137692431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3121a8137431115429645e415337a4c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 4
 --- !u!212 &1137692434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -398,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 0d8bae4aedb3fcf47bd5a62c22daf0e0, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: d416f9ee53da9fb4b959351e9b4a83ad, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -420,6 +407,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1137692438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137692431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f7487e62bed424fa8227c65ca9f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
