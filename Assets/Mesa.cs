@@ -3,36 +3,36 @@ using System.Collections;
 
 public class Mesa : MonoBehaviour
 {
-    int MesasActuales = 0;
-    int maxClientes = 2;
     public bool tieneCliente = false;
+    int maxClientes = 2;
+    int MesasActuales = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-   
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Cliente") && MesasActuales <= maxClientes)
+        if (other.gameObject.CompareTag("Cliente") && MesasActuales < maxClientes)
         {
             tieneCliente = true;
             MesasActuales++;
             Debug.Log("hay un cliente");
         }
-        else
+        else if (other.gameObject.CompareTag("Cliente") && MesasActuales == maxClientes)
         {
             tieneCliente = false;
+            Debug.Log("maximo superado");
         }
+  
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnCollisionExit2D(Collision2D other)
     {
         Debug.Log("ya no");
         tieneCliente = false;
