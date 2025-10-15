@@ -5,29 +5,52 @@ using UnityEngine.Windows;
 
 public class PLATO : MonoBehaviour
 {
-    private bool recogido;
+    protected bool recogido;
+    [SerializeField] protected Transform mesaDestino;
 
-    [SerializeField] Transform player;
-    private CAMARERO camarero;
-    float distance;
+    [SerializeField] protected Transform player;
+    protected CAMARERO camarero;
+    protected float distancePlayer;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         recogido = false;
         camarero = player.GetComponent<CAMARERO>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
-        distance = Vector2.Distance(transform.position, player.position);
-        if (!recogido && !camarero.conPlato && distance < 0.8 && UnityEngine.Input.GetKeyDown(KeyCode.E))
+        distancePlayer = Vector2.Distance(transform.position, player.position);
+        if (!recogido && !camarero.conPlato && distancePlayer < 0.8f && UnityEngine.Input.GetKeyDown(KeyCode.E))
         {
             recogido = true;
             camarero.conPlato = true;
+            LlevarPlato();
         }
         else if (recogido)
         {
-
+            float distanceMesa = Vector2.Distance(player.position, mesaDestino.position);
+            if (distanceMesa < 0.8f && UnityEngine.Input.GetKeyDown(KeyCode.E)) 
+            {
+                EntregarPlato();
+            }
         }
+    }
+
+    protected virtual void LlevarPlato() 
+    {
+        //El sprite deja de verse
+    }
+    
+    protected virtual void EntregarPlato()
+    {
+        camarero.conPlato = false;
+        Destroy(gameObject);
+    }
+
+    public void AsignarMesa(Transform mesa) 
+    {
+        //se llama en la factory al crear un plato
+        mesaDestino = mesa;
     }
 }
