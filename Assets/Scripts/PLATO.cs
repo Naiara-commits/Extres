@@ -28,6 +28,7 @@ public class PLATO : MonoBehaviour
         }
         else if (recogido)
         {
+            Debug.Log("Se ha recogio");
             float distanceMesa = Vector2.Distance(player.position, mesaDestino.position);
             if (distanceMesa < 0.8f && UnityEngine.Input.GetKeyDown(KeyCode.E)) 
             {
@@ -38,6 +39,7 @@ public class PLATO : MonoBehaviour
 
     public void AsignarPlayer(Transform p)
     {
+        Debug.Log("Se ha asignao player");
         player = p;
         camarero = player.GetComponent<CAMARERO>();
     }
@@ -55,6 +57,7 @@ public class PLATO : MonoBehaviour
 
     public void AsignarMesa(Transform mesa) 
     {
+        Debug.Log("se ha asignao mesa");
         //se llama en la factory al crear un plato
         mesaDestino = mesa;
     }

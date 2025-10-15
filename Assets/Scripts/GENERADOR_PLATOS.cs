@@ -2,25 +2,33 @@ using UnityEngine;
 
 public class GENERADOR_PLATOS : MonoBehaviour
 {
+    [SerializeField] private GameObject platoRojoPrefab;
 
-    public GameObject[] obj;
-    public float tiempoMin = 1f;
-    public float tiempoMax = 2f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Transform player;
+
+    GameObject prefab;
+
+    public PLATO CrearPlato(int tipo, Transform mesaDestino)
     {
-        Generar();
-    }
+        prefab = null;
 
-    // Update is called once per frame
-    void Update()
-    {
+        switch (tipo)
+        {
+            //Caso del plato rojo
+            case 0:
+                prefab = platoRojoPrefab;
+                break;
+            default:
+                return null;
 
-    }
+        }
 
-    void Generar()
-    {
-        Instantiate(obj[Random.Range(0, obj.Length)], transform.position, Quaternion.identity);
-        Invoke("Generar", Random.Range(tiempoMin, tiempoMax));
+        GameObject platoCreado = Instantiate(prefab, transform.position, Quaternion.identity);
+
+        PLATO plato = platoCreado.GetComponent<PLATO>();
+        plato.AsignarPlayer(player);
+        plato.AsignarMesa(mesaDestino);
+
+        return plato;
     }
 }

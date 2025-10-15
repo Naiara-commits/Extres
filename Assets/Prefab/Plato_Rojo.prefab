@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5012870362678529183}
   - component: {fileID: 6492147376090769589}
   - component: {fileID: 781702277296599716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plato_Rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
