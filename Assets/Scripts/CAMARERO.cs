@@ -7,6 +7,8 @@ public class CAMARERO : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementDirection;
     private PlayerInput playerInput;
+
+    public bool conPlato;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
