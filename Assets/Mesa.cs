@@ -14,28 +14,31 @@ public class Mesa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    }
-
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Cliente") && MesasActuales < maxClientes)
+        if (tieneCliente == false && MesasActuales < maxClientes)
         {
             tieneCliente = true;
             MesasActuales++;
             Debug.Log("hay un cliente");
         }
-        else if (other.gameObject.CompareTag("Cliente") && MesasActuales == maxClientes)
+        else if (tieneCliente == true)
         {
-            tieneCliente = false;
-            Debug.Log("maximo superado");
+            StartCoroutine(ClienteSeVa());
         }
-  
     }
 
-    private void OnCollisionExit2D(Collision2D other)
+    void GenerarCliente()
     {
-        Debug.Log("ya no");
+      tieneCliente = true;
+     
+    }
+    IEnumerator ClienteSeVa()
+    {
+        yield return new WaitForSeconds(10f);
         tieneCliente = false;
         MesasActuales--;
+        Debug.Log("el cliente se fue");
     }
+
+
+
 }
