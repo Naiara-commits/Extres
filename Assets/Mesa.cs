@@ -20,7 +20,7 @@ public class Mesa : MonoBehaviour
             MesasActuales++;
             Debug.Log("hay un cliente");
         }
-        else if (tieneCliente == true)
+        else if (tieneCliente == true /* && se ha servido el plato == true*/)
         {
             StartCoroutine(ClienteSeVa());
         }
@@ -28,9 +28,9 @@ public class Mesa : MonoBehaviour
 
     void GenerarCliente()
     {
-      tieneCliente = true;
-     
+        tieneCliente = true;
     }
+
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
