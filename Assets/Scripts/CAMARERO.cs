@@ -7,6 +7,7 @@ public class CAMARERO : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementDirection;
     private PlayerInput playerInput;
+    private BoxCollider2D bc;
 
     public bool conPlato;
     void Start()
@@ -23,4 +24,5 @@ public class CAMARERO : MonoBehaviour
     {
         rb.linearVelocity = movementDirection * movementSpeed;
     }
+
 }

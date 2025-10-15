@@ -19,12 +19,14 @@ public class Mesa : MonoBehaviour
         {
             tieneCliente = true;
             MesasActuales++;
-            generadorFactory.CrearPlato(0, transform);
             Debug.Log("hay un cliente");
         }
         else if (tieneCliente == true /* && se ha servido el plato == true*/)
         {
-            StartCoroutine(ClienteSeVa());
+            //StartCoroutine(ClienteSeVa());
+            generadorFactory.CrearPlato(0, transform);
+            transform.gameObject.tag = "rojo";
+
         }
     }
 
