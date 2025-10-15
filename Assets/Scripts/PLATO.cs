@@ -15,7 +15,6 @@ public class PLATO : MonoBehaviour
     protected virtual void Awake()
     {
         recogido = false;
-        camarero = player.GetComponent<CAMARERO>();
     }
 
     protected virtual void Update()
@@ -35,6 +34,12 @@ public class PLATO : MonoBehaviour
                 EntregarPlato();
             }
         }
+    }
+
+    public void AsignarPlayer(Transform p)
+    {
+        player = p;
+        camarero = player.GetComponent<CAMARERO>();
     }
 
     protected virtual void LlevarPlato() 
