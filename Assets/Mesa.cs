@@ -6,6 +6,7 @@ public class Mesa : MonoBehaviour
     public bool tieneCliente = false;
     int maxClientes = 2;
     int MesasActuales = 0;
+    public GENERADOR_PLATOS generadorFactory;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +19,7 @@ public class Mesa : MonoBehaviour
         {
             tieneCliente = true;
             MesasActuales++;
+            generadorFactory.CrearPlato(0, transform);
             Debug.Log("hay un cliente");
         }
         else if (tieneCliente == true /* && se ha servido el plato == true*/)
