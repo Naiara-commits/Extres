@@ -358,6 +358,70 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1001 &438060920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1998597563184797074, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_Name
+      value: Mesa (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306097458426821800, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: generadorFactory
+      value: 
+      objectReference: {fileID: 2087257414}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8710089
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.353402
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7265095841972493200, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1998597563184797074, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1626347962}
+  m_SourcePrefab: {fileID: 100100000, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
 --- !u!1 &1137692431
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +438,7 @@ GameObject:
   - component: {fileID: 1137692439}
   m_Layer: 0
   m_Name: Camarero
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -570,6 +634,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1626347957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1998597563184797074, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+  m_PrefabInstance: {fileID: 438060920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1626347962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626347957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f584fe805f2cee642836e5dfff1bdfe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2087257413
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,3 +808,4 @@ SceneRoots:
   - {fileID: 1137692435}
   - {fileID: 2087257416}
   - {fileID: 295448714}
+  - {fileID: 438060920}
