@@ -23,7 +23,7 @@ public class Controlador_mesa : MonoBehaviour
 
     void IntentarSentarCliente()
     {
-        if (mesasOcupadas < 2) // Si la cantidad de mesas ocupadas es menor a 2
+        if (mesasOcupadas < 2 && listaMesasLibres.Count > 0) // Si la cantidad de mesas ocupadas es menor a 2
         {
             { 
                 GameObject mesa = listaMesasLibres[0]; // Coge la primera mesa libre de la lista
