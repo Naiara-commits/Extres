@@ -7,6 +7,7 @@ public class Mesa : MonoBehaviour
     int maxClientes = 2;
     int MesasActuales = 0;
     public GENERADOR_PLATOS generadorFactory;
+    int tipoDeMesa;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,16 +24,12 @@ public class Mesa : MonoBehaviour
         }
         else if (tieneCliente == true /* && se ha servido el plato == true*/)
         {
+            //falta hacer aleatorio el tipo de mesa y cuando aparece
+            tipoDeMesa = 0;
             //StartCoroutine(ClienteSeVa());
-            generadorFactory.CrearPlato(0, transform);
-            transform.gameObject.tag = "rojo";
-
+            generadorFactory.CrearPlato(tipoDeMesa);
+            transform.gameObject.tag = tipoDeMesa.ToString();
         }
-    }
-
-    void GenerarCliente()
-    {
-        tieneCliente = true;
     }
 
     IEnumerator ClienteSeVa()

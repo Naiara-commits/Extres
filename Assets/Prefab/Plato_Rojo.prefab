@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5012870362678529183}
   - component: {fileID: 6492147376090769589}
-  - component: {fileID: 781702277296599716}
+  - component: {fileID: 8968899376836404256}
   m_Layer: 8
   m_Name: Plato_Rojo
-  m_TagString: Untagged
+  m_TagString: 0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &781702277296599716
+--- !u!114 &8968899376836404256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,8 +97,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3395073976885225044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258b1bb5c49addb40ae93781c1931abc, type: 3}
+  m_Script: {fileID: 11500000, guid: 35c39430256b96649b51f0748f124cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesaDestino: {fileID: 0}
   player: {fileID: 0}
+  rangoInteractuable: 0.8

@@ -4,42 +4,39 @@ using UnityEngine;
 
 public class GENERADOR_PLATOS : MonoBehaviour
 {
-    [SerializeField] private GameObject platoRojoPrefab;
+    [SerializeField] 
+    private GameObject platoRojoPrefab;
 
-    [SerializeField] private Transform player;
+    [SerializeField] 
+    private Transform player;
 
     GameObject prefab;
 
- 
-
-    public PLATO CrearPlato(int tipo, Transform mesaDestino)
+    public PLATO CrearPlato(int tipo)
     {
         prefab = null;
 
+        //Se pone el prefab del
         switch (tipo)
         {
             // Caso del plato rojo  
             case 0:
                 prefab = platoRojoPrefab;
                 break;
+            /* ejemplo de mas casos 
+            case 1:
+                prefab = platoAzulPrefab;
+                break;
+            */
             default:
                 return null;
         }
-
+        //Crea un objeto del caso que se haya llamado
         GameObject platoCreado = Instantiate(prefab, transform.position, Quaternion.identity);
-   
 
+        //se entra a la clase plato para setear el player
         PLATO plato = platoCreado.GetComponent<PLATO>();
-        plato.AsignarPlayer(player);
-        plato.AsignarMesa(mesaDestino);
-
-        
-
-        if (transform.tag == tipo.ToString())
-        {
-            
-            Debug.Log("Igual");
-        }
+        plato.SetPlayer(player);
 
         return plato;
     }
