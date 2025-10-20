@@ -12,16 +12,9 @@ public class Controlador_mesa : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D mesa)
-    {
-        if (mesa.gameObject.tag == "Player") // Si el jugador toca la mesa
-        {
-             IntentarSentarCliente();
-        }
+  
 
-    }
-
-    void IntentarSentarCliente()
+    public void IntentarSentarCliente()
     {
         if (mesasOcupadas < 2 && listaMesasLibres.Count > 0) // Si la cantidad de mesas ocupadas es menor a 2
         {

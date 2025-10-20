@@ -8,6 +8,7 @@ public class Mesa : MonoBehaviour
     int MesasActuales = 0;
     public GENERADOR_PLATOS generadorFactory;
     int tipoDeMesa;
+    public Controlador_mesa controlador;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +31,15 @@ public class Mesa : MonoBehaviour
             generadorFactory.CrearPlato(tipoDeMesa);
             transform.gameObject.tag = tipoDeMesa.ToString();
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D mesa)
+    {
+        if (mesa.gameObject.tag == "Player") // Si el jugador toca la mesa
+        {
+            controlador.IntentarSentarCliente();
+        }
+
     }
 
     IEnumerator ClienteSeVa()
