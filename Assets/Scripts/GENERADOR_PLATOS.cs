@@ -6,6 +6,10 @@ public class GENERADOR_PLATOS : MonoBehaviour
 {
     [SerializeField] 
     private GameObject platoRojoPrefab;
+    [SerializeField] 
+    private GameObject platoAzulPrefab;
+    [SerializeField] 
+    private GameObject platoNaranjaPrefab;
 
     [SerializeField] 
     private Transform player;
@@ -23,11 +27,13 @@ public class GENERADOR_PLATOS : MonoBehaviour
             case 0:
                 prefab = platoRojoPrefab;
                 break;
-            /* ejemplo de mas casos 
             case 1:
                 prefab = platoAzulPrefab;
                 break;
-            */
+            case 2:
+                prefab = platoNaranjaPrefab;
+                break;
+
             default:
                 return null;
         }

@@ -6,6 +6,7 @@ public class Controlador_mesa : MonoBehaviour
     List<GameObject> listaMesasOcupadas = new List<GameObject>();
     List<GameObject> listaMesasLibres = new List<GameObject>();
     int mesasOcupadas = 0;
+    int maxMesas = 2;
 
     void Start()
     {
@@ -16,7 +17,7 @@ public class Controlador_mesa : MonoBehaviour
 
     public void IntentarSentarCliente()
     {
-        if (mesasOcupadas < 2 && listaMesasLibres.Count > 0) // Si la cantidad de mesas ocupadas es menor a 2
+        if (mesasOcupadas < maxMesas && listaMesasLibres.Count > 0) // Si la cantidad de mesas ocupadas es menor a 2
         {
             { 
                 GameObject mesa = listaMesasLibres[0]; // Coge la primera mesa libre de la lista
