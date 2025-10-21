@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class Controlador_mesa : MonoBehaviour
 {
@@ -18,8 +19,10 @@ public class Controlador_mesa : MonoBehaviour
     {
         if (mesasOcupadas < 2 && listaMesasLibres.Count > 0) // Si la cantidad de mesas ocupadas es menor a 2
         {
-            { 
-                GameObject mesa = listaMesasLibres[0]; // Coge la primera mesa libre de la lista
+            {
+                // temporizador sentar cliente
+                StartCoroutine("ClienteCambia");
+                GameObject mesa = listaMesasLibres[0]; // Coge la primera mesa libre de la lista, HAZLO ALEATORIOS
                 mesasOcupadas++; // Aumenta la cantidad de mesas ocupadas
                 listaMesasOcupadas.Add(mesa); // Agrega la mesa a la lista de mesas ocupadas
                 listaMesasLibres.Remove(mesa); // Quita la mesa de la lista de mesas libres
@@ -36,5 +39,10 @@ public class Controlador_mesa : MonoBehaviour
         {
             IntentarSentarCliente();
         }
+    }
+
+    IEnumerator ClienteCambia()
+    {
+        yield return new WaitForSeconds(10f);
     }
 }
