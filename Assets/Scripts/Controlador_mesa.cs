@@ -22,7 +22,8 @@ public class Controlador_mesa : MonoBehaviour
             {
                 // temporizador sentar cliente
                 StartCoroutine("ClienteCambia");
-                GameObject mesa = listaMesasLibres[0]; // Coge la primera mesa libre de la lista, HAZLO ALEATORIOS
+                int mesaAleatoria = Random.Range(0, listaMesasLibres.Count);
+                GameObject mesa = listaMesasLibres[mesaAleatoria]; // Coge una mesa aleatoria de la lista
                 mesasOcupadas++; // Aumenta la cantidad de mesas ocupadas
                 listaMesasOcupadas.Add(mesa); // Agrega la mesa a la lista de mesas ocupadas
                 listaMesasLibres.Remove(mesa); // Quita la mesa de la lista de mesas libres
