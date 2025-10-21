@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Controlador_mesa : MonoBehaviour
 {
     List<GameObject> listaMesasOcupadas = new List<GameObject>();
-    List<GameObject> listaMesasLibres = new List<GameObject>();
+    [SerializeField] List<GameObject> listaMesasLibres = new List<GameObject>();
     int mesasOcupadas = 0;
 
     void Start()
