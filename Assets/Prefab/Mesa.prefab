@@ -103,6 +103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tieneCliente: 0
   generadorFactory: {fileID: 0}
+  controlador: {fileID: 0}
+  SpriteRenderer: {fileID: 8015127309221662818}
 --- !u!61 &-1946076049400995071
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,14 +8,32 @@ public class Mesa : MonoBehaviour
     public GENERADOR_PLATOS generadorFactory;
     int tipoDeMesa;
     public Controlador_mesa controlador;
+    public SpriteRenderer image;
+    public bool isFree
+    {
+        get
+        {
+            return isFree;
+        }
+        set
+        {
+            isFree = value;
+            if (isFree)
+            {
+                image.color = Color.red;
+            }
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isFree = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (tieneCliente == false )
         {
             tieneCliente = true;
@@ -23,13 +41,14 @@ public class Mesa : MonoBehaviour
         }
         else if (tieneCliente == true /* && se ha servido el plato == true*/)
         {
-            //falta hacer aleatorio el tipo de mesa y cuando aparece
+
+            //falta hacer aleatorio el tipo de mesa 
             tipoDeMesa = 0;
 
             //StartCoroutine(ClienteSeVa());
 
 
-            generadorFactory.CrearPlato(tipoDeMesa);
+            //generadorFactory.CrearPlato(tipoDeMesa);
             transform.gameObject.tag = tipoDeMesa.ToString();
         }
     }
