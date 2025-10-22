@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
@@ -8,45 +8,67 @@ public class Controlador_mesa : MonoBehaviour
     [SerializeField] List<GameObject> listaMesasLibres = new List<GameObject>();
     int mesasOcupadas = 0;
     int maxMesas = 2;
+    float targetTime = 5;
 
     void Start()
     {
-
+        for (int i = 0; i < listaMesasLibres.Count; i++)
+        {
+            listaMesasLibres[i].GetComponent<Mesa>().setTableStatus(false);
+        }
     }
 
 
 
     public void IntentarSentarCliente()
     {
-        if (mesasOcupadas < maxMesas && listaMesasLibres.Count > 0) // Si la cantidad de mesas ocupadas es menor a 2
+        GameObject posibleMesa = null;
+        Debug.Log("listaMesasOcupadas.Count " + listaMesasOcupadas.Count);
+        Debug.Log("maxMesas " + maxMesas);
+        Debug.Log("listaMesasLibres.Count " + listaMesasLibres.Count);
+       
+        if (listaMesasOcupadas.Count >= maxMesas && listaMesasLibres.Count <= 0) // Si la cantidad de mesas ocupadas es menor a 2
         {
-            {
-                // temporizador sentar cliente
-                StartCoroutine("ClienteCambia");
-                int mesaAleatoria = Random.Range(0, listaMesasLibres.Count);
-                GameObject mesa = listaMesasLibres[mesaAleatoria]; // Coge una mesa aleatoria de la lista
-                mesasOcupadas++; // Aumenta la cantidad de mesas ocupadas
-                listaMesasOcupadas.Add(mesa); // Agrega la mesa a la lista de mesas ocupadas
-                listaMesasLibres.Remove(mesa); // Quita la mesa de la lista de mesas libres
-
-
-            }
-
-
+            return;
         }
+        Debug.Log("Primer chack");
+        for(int i = 0; i < listaMesasLibres.Count; i++)
+        {
+           if(listaMesasLibres[i].GetComponent<Mesa>().isFree)
+            {
+                posibleMesa = listaMesasLibres [i];
+                break;
+            }
+        }
+        Debug.Log("Segundo chick");
+        if(posibleMesa != null) 
+        {
+            posibleMesa.GetComponent<Mesa>().setTableStatus(true);
+            listaMesasLibres.Remove(posibleMesa);
+            listaMesasOcupadas.Add(posibleMesa);
+            Debug.Log("Tercer Chuck");
+        }
+
+
+    }
         // Update is called once per frame
         void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
         {
-            var numero = Random.Range(0, 100); // Genera un n?mero aleatorio entre 0 y 100
-            if (numero > 70) // Si el n?mero es mayor a 70
+
+        targetTime -= Time.deltaTime;
+            if (targetTime < 0)
             {
-                IntentarSentarCliente();
+            IntentarSentarCliente();
+                targetTime = 5;
             }
+        
+          
+        //Debug.Log("targetTime  " + targetTime);
         }
 
         IEnumerator ClienteCambia()
         {
             yield return new WaitForSeconds(10f);
         }
-    }
+    
 }
