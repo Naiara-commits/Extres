@@ -17,6 +17,7 @@ public class Mesa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (tieneCliente == false && MesasActuales < maxClientes)
         {
             tieneCliente = true;
