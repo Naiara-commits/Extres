@@ -11,10 +11,10 @@ public class Controlador_mesa : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
-  
+
 
     public void IntentarSentarCliente()
     {
@@ -31,20 +31,22 @@ public class Controlador_mesa : MonoBehaviour
 
 
             }
-        }
-    }
-    // Update is called once per frame
-    void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
-    {
-        var numero = Random.Range(0,100); // Genera un número aleatorio entre 0 y 100
-        if (numero > 70) // Si el número es mayor a 70
-        {
-            IntentarSentarCliente();
-        }
-    }
 
-    IEnumerator ClienteCambia()
-    {
-        yield return new WaitForSeconds(10f);
+
+        }
+        // Update is called once per frame
+        void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
+        {
+            var numero = Random.Range(0, 100); // Genera un n?mero aleatorio entre 0 y 100
+            if (numero > 70) // Si el n?mero es mayor a 70
+            {
+                IntentarSentarCliente();
+            }
+        }
+
+        IEnumerator ClienteCambia()
+        {
+            yield return new WaitForSeconds(10f);
+        }
     }
 }
