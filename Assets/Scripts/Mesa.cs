@@ -41,14 +41,14 @@ public class Mesa : MonoBehaviour
     }
     public void setTableStatus (bool isOccuped)
     {
-        isFree = !isOccuped;
-        if (isFree)
+        isFree = !isOccuped;                
+        if (isFree)         //Si la mesa está vacía
         {
-            image.color = Color.yellow;
+            image.color = Color.yellow;     //La mesa va a estar amarilla
         }
         else
         {
-            image.color = Color.red;
+            image.color = Color.red;        //Si está ocupada, la mesa se pondrá roja
         }
     }
 
