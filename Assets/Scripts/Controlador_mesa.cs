@@ -25,15 +25,18 @@ public class Controlador_mesa : MonoBehaviour
         {
             return;
         }
-        for(int i = 0; i < GameManager.Instance.listaMesasLibres.Count; i++)     //Se recorre cada elemento dentro de la lista de mesas libres
+
+        for (int i = 0; i < GameManager.Instance.listaMesasLibres.Count; i++)     //Se recorre cada elemento dentro de la lista de mesas libres
         {
            if (GameManager.Instance.listaMesasLibres[i].GetComponent<Mesa>().isFree)  
-            {
-                posibleMesa = GameManager.Instance.listaMesasLibres [i];     //La posible mesa que será la mesa que se vaya a usar es la que se ha encontrado en la lista
+           {
+                int mesaAleatoria = Random.Range(0, GameManager.Instance.listaMesasLibres.Count);
+                posibleMesa = GameManager.Instance.listaMesasLibres [mesaAleatoria];     //La posible mesa que será la mesa que se vaya a usar es la que se ha encontrado en la lista
                 break;
-            }
+           }
         }
-        if(posibleMesa != null)         
+        
+        if (posibleMesa != null)         
         {
             posibleMesa.GetComponent<Mesa>().setTableStatus(true);      //Se cambia el status a ocupada
             GameManager.Instance.listaMesasLibres.Remove(posibleMesa);       //Se borra la mesa de la lista de mesas libres
@@ -43,20 +46,21 @@ public class Controlador_mesa : MonoBehaviour
 
     }
         // Update is called once per frame
-        void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
-        {
+    void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
+    {
 
-            targetTime -= Time.deltaTime;      //Se va reduciendo el tiemo
-            if (targetTime < 0)         //Cuendo el contador llegue a 0
-            {
+        targetTime -= Time.deltaTime;      //Se va reduciendo el tiempo
+        
+        if (targetTime < 0)         //Cuando el contador llegue a 0
+        {
             IntentarSentarCliente();        //Se llama a la función para que arranque
-                targetTime = 5;     //Se vuelve a pponer a 5 el temporuizador
-            }
+            targetTime = 5;     //Se vuelve a pponer a 5 el temporizador
         }
+    }
 
-        IEnumerator ClienteCambia()
-        {
-            yield return new WaitForSeconds(10f);
-        }
+    IEnumerator ClienteCambia()
+    {
+        yield return new WaitForSeconds(10f);
+    }
     
 }
