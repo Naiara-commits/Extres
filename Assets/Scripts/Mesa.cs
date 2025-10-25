@@ -7,7 +7,6 @@ public class Mesa : MonoBehaviour
     public Controlador_mesa controlador;
     public SpriteRenderer image;
 
-    public bool tieneCliente = false;
     public bool isFree;
     
     int tipoDeMesa;
@@ -18,7 +17,7 @@ public class Mesa : MonoBehaviour
     {
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.listaMesasLibres.Add(this.gameObject);
+            GameManager.Instance.listaMesasLibres.Add(this.gameObject); // Añade la mesa a la lista de mesas libres del gameManager
         }
 
         setTableStatus(false); // La mesa empieza libre
@@ -28,8 +27,8 @@ public class Mesa : MonoBehaviour
     void Update()
     {
 
-         if (tieneCliente == true /* && se ha servido el plato == true*/)
-        {
+         if (isFree == true /* && se ha servido el plato == true*/)
+         {
 
             //falta hacer aleatorio el tipo de mesa 
             tipoDeMesa = 0;
@@ -39,7 +38,7 @@ public class Mesa : MonoBehaviour
 
             //generadorFactory.CrearPlato(tipoDeMesa);
             transform.gameObject.tag = tipoDeMesa.ToString();
-        }
+         }
     }
     public void setTableStatus (bool isOccuped)
     {
@@ -58,7 +57,7 @@ public class Mesa : MonoBehaviour
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
-        tieneCliente = false;
+        setTableStatus(false);
         Debug.Log("el cliente se fue");
     }
 
