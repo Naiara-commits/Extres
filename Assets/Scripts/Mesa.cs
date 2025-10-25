@@ -7,7 +7,6 @@ public class Mesa : MonoBehaviour
     public Controlador_mesa controlador;
     public SpriteRenderer image;
 
-    public bool tieneCliente = false;
     public bool isFree;
     
     int tipoDeMesa;
@@ -28,7 +27,7 @@ public class Mesa : MonoBehaviour
     void Update()
     {
 
-         if (tieneCliente == true /* && se ha servido el plato == true*/)
+         if (isFree == true /* && se ha servido el plato == true*/)
         {
 
             //falta hacer aleatorio el tipo de mesa 
@@ -58,7 +57,7 @@ public class Mesa : MonoBehaviour
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
-        tieneCliente = false;
+        isFree = true;
         Debug.Log("el cliente se fue");
     }
 
