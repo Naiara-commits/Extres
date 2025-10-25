@@ -153,7 +153,6 @@ MonoBehaviour:
   generadorFactory: {fileID: 2087257414}
   controlador: {fileID: 1741495978}
   image: {fileID: 295448713}
-  tieneCliente: 0
   isFree: 0
   mesa: {fileID: 295448711}
 --- !u!212 &295448713
@@ -482,6 +481,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
+--- !u!1 &998898506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 998898507}
+  - component: {fileID: 998898508}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &998898507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998898506}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.43074268, y: 3.2105663, z: -0.04025936}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &998898508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998898506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4be0ac6dbf8e14faa531dd2d415187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlador: {fileID: 1741495978}
+  listaMesasOcupadas: []
+  listaMesasLibres: []
 --- !u!1 &1137692431
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,11 +806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f584fe805f2cee642836e5dfff1bdfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listaMesasLibres:
-  - {fileID: 1393539034}
-  - {fileID: 1279598249}
-  - {fileID: 295448711}
-  listaMesasOcupadas: []
 --- !u!4 &1741495979
 Transform:
   m_ObjectHideFlags: 0
@@ -1015,3 +1056,4 @@ SceneRoots:
   - {fileID: 438060920}
   - {fileID: 1741495979}
   - {fileID: 2147310298}
+  - {fileID: 998898507}

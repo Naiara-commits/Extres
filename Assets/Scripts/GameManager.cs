@@ -18,9 +18,29 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Destroy(gameObject);
             Debug.Log("Hay más de un GameManager");
         }
     }
 
+    public void MesasLibres(GameObject mesa)
+    {
+        if (!listaMesasOcupadas.Contains(mesa))
+        {
+            listaMesasOcupadas.Remove(mesa);
+            listaMesasLibres.Add(mesa);
+            
+        }
 
+
+    }
+
+    public void MesasOcupadas(GameObject mesa)
+    {
+        if (listaMesasLibres.Contains(mesa))
+        {
+            listaMesasLibres.Remove(mesa);
+            listaMesasOcupadas.Add(mesa);
+        }
+    }
 }

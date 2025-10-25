@@ -57,7 +57,7 @@ public class Mesa : MonoBehaviour
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
-        isFree = true;
+        setTableStatus(false);
         Debug.Log("el cliente se fue");
     }
 
