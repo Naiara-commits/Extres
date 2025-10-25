@@ -4,9 +4,9 @@ using System.Collections;
 
 public class Controlador_mesa : MonoBehaviour
 {
-    List<GameObject> listaMesasOcupadas = new List<GameObject>();
     [SerializeField] List<GameObject> listaMesasLibres = new List<GameObject>();
-    int mesasOcupadas = 0;
+
+    [SerializeField] List<GameObject> listaMesasOcupadas = new List<GameObject>();
     int maxMesas = 2;
     float targetTime = 5;       //El temporizador se inicieliza a 5 por ej
 
@@ -49,7 +49,7 @@ public class Controlador_mesa : MonoBehaviour
         void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
         {
 
-        targetTime -= Time.deltaTime;      //Se va reduciendo el tiemo
+            targetTime -= Time.deltaTime;      //Se va reduciendo el tiemo
             if (targetTime < 0)         //Cuendo el contador llegue a 0
             {
             IntentarSentarCliente();        //Se llama a la función para que arranque
