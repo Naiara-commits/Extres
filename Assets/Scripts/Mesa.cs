@@ -26,7 +26,6 @@ public class Mesa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
          if (isFree == true /* && se ha servido el plato == true*/)
          {
 
@@ -35,11 +34,11 @@ public class Mesa : MonoBehaviour
 
             //StartCoroutine(ClienteSeVa());
 
-
             //generadorFactory.CrearPlato(tipoDeMesa);
             transform.gameObject.tag = tipoDeMesa.ToString();
          }
     }
+
     public void setTableStatus (bool isOccuped)
     {
         isFree = !isOccuped;                
@@ -53,14 +52,10 @@ public class Mesa : MonoBehaviour
         }
     }
 
-
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
         setTableStatus(false);
         Debug.Log("el cliente se fue");
     }
-
-
-
 }

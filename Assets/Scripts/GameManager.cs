@@ -12,35 +12,31 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null)
+        if (Instance == null) 
         {
-            Instance = this;
+            Instance = this; // Se asigna este como el único gameManafer
         }
         else
         {
-            Destroy(gameObject);
-            Debug.Log("Hay más de un GameManager");
+            Destroy(gameObject); // Si hay otro gameManager, se borra
         }
     }
 
-    public void MesasLibres(GameObject mesa)
+    public void MesasLibres(GameObject mesa) // Método para añadir las mesas en la lista de mesas libres
     {
-        if (!listaMesasOcupadas.Contains(mesa))
+        if (listaMesasOcupadas.Contains(mesa)) // Si la mesa  está en la lista de mesas ocuapadas
         {
             listaMesasOcupadas.Remove(mesa);
             listaMesasLibres.Add(mesa);
-            
         }
-
-
     }
 
-    public void MesasOcupadas(GameObject mesa)
+    public void MesasOcupadas(GameObject mesa) // Método para añadir las mesas en la lista de mesas ocupadas
     {
-        if (listaMesasLibres.Contains(mesa))
+        if (listaMesasLibres.Contains(mesa)) // Si la mesa está en la lista de mesas libres
         {
             listaMesasLibres.Remove(mesa);
-            listaMesasOcupadas.Add(mesa);
+            listaMesasOcupadas.Add(mesa); 
         }
     }
 }
