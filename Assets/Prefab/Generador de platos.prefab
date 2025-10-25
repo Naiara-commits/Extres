@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platoRojoPrefab: {fileID: 3395073976885225044, guid: 97eb0abfbacac1540ab2187644627cc1, type: 3}
+  platoAzulPrefab: {fileID: 3395073976885225044, guid: 2b2d08c0d2db38a44a403f16ad4c21e9, type: 3}
+  platoNaranjaPrefab: {fileID: 3395073976885225044, guid: c3340e069ab6c864db779bb4510d5979, type: 3}
   player: {fileID: 0}
 --- !u!61 &1074342055866181342
 BoxCollider2D:

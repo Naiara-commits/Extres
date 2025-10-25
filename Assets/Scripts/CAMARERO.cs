@@ -10,6 +10,12 @@ public class CAMARERO : MonoBehaviour
     private BoxCollider2D bc;
 
     public bool conPlato;
+    PLATO plato;
+
+    [SerializeField]
+    private float rangoInteractuable = 0.8f;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,4 +31,39 @@ public class CAMARERO : MonoBehaviour
         rb.linearVelocity = movementDirection * movementSpeed;
     }
 
+    public void OnIneractionInputEvent(InputAction.CallbackContext context) 
+    {
+        //Solo hace la función una vez por pulsación
+        if (!context.performed) return;
+
+        //Busca colliders2d dentro de un radio de interaccion
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, rangoInteractuable);
+
+        PLATO nearestDish = null;
+        float lowerDistance = rangoInteractuable + 1f;
+
+        //por cada collider que toca
+        foreach (var c in hitColliders)
+        {
+            //busca un plato
+            PLATO dish = c.GetComponent<PLATO>();
+            if (dish != null) 
+            {
+                //el más cercano
+                float distance = Vector2.Distance(transform.position, dish.transform.position);
+                if (distance < lowerDistance)
+                { 
+                    //actualiza el plato
+                    lowerDistance = distance;
+                    nearestDish = dish;
+                }
+            }
+        }
+
+        if (nearestDish != null)
+        {
+            //interactua con el plato más cercano
+            nearestDish.OnInteract();
+        }
+    }
 }

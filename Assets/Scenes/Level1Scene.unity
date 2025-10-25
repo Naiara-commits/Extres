@@ -152,6 +152,8 @@ MonoBehaviour:
   tieneCliente: 0
   generadorFactory: {fileID: 2087257414}
   controlador: {fileID: 1741495978}
+  image: {fileID: 0}
+  isFree: 0
 --- !u!212 &295448713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -424,11 +426,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
---- !u!1 &867534127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1998597563184797074, guid: 81eb571ab139067469b1dd1f7614d416, type: 3}
-  m_PrefabInstance: {fileID: 438060920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1137692431
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +529,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.29947072
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
@@ -576,6 +573,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 2193a3de-e4f2-44d7-80e8-d1daf985d03a
     m_ActionName: 'Player/Movement[/Keyboard/w,/Keyboard/a,/Keyboard/s,/Keyboard/d]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1137692438}
+        m_TargetAssemblyTypeName: CAMARERO, Assembly-CSharp
+        m_MethodName: OnIneractionInputEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ad370d34-9811-48f1-af96-afbc816f19fe
+    m_ActionName: 'Player/Interact[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -595,6 +608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   conPlato: 0
+  rangoInteractuable: 1.5
 --- !u!61 &1137692439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -670,11 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f584fe805f2cee642836e5dfff1bdfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listaMesasOcupadas:
-  - {fileID: 867534127}
-  - {fileID: 295448711}
-  - {fileID: 0}
-  maxMesas: 2
+  listaMesasLibres: []
 --- !u!4 &1741495979
 Transform:
   m_ObjectHideFlags: 0
@@ -722,8 +732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platoRojoPrefab: {fileID: 3395073976885225044, guid: 97eb0abfbacac1540ab2187644627cc1, type: 3}
-  platoAzulPrefab: {fileID: 0}
-  platoNaranjaPrefab: {fileID: 0}
+  platoAzulPrefab: {fileID: 3395073976885225044, guid: 2b2d08c0d2db38a44a403f16ad4c21e9, type: 3}
+  platoNaranjaPrefab: {fileID: 3395073976885225044, guid: c3340e069ab6c864db779bb4510d5979, type: 3}
   player: {fileID: 1137692435}
 --- !u!212 &2087257415
 SpriteRenderer:
@@ -789,7 +799,7 @@ Transform:
   m_GameObject: {fileID: 2087257413}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.77, y: 4.37, z: 0}
+  m_LocalPosition: {x: -0.71, y: -1.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
