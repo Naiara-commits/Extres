@@ -36,34 +36,46 @@ public class CAMARERO : MonoBehaviour
         //Solo hace la función una vez por pulsación
         if (!context.performed) return;
 
-        //Busca colliders2d dentro de un radio de interaccion
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, rangoInteractuable);
-
-        PLATO nearestDish = null;
-        float lowerDistance = rangoInteractuable + 1f;
-
-        //por cada collider que toca
-        foreach (var c in hitColliders)
+        if (!conPlato)
         {
-            //busca un plato
-            PLATO dish = c.GetComponent<PLATO>();
-            if (dish != null) 
+            //Busca colliders2d dentro de un radio de interaccion
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, rangoInteractuable);
+
+            PLATO nearestDish = null;
+            float lowerDistance = rangoInteractuable + 1f;
+
+            //por cada collider que toca
+            foreach (var c in hitColliders)
             {
-                //el más cercano
-                float distance = Vector2.Distance(transform.position, dish.transform.position);
-                if (distance < lowerDistance)
-                { 
-                    //actualiza el plato
-                    lowerDistance = distance;
-                    nearestDish = dish;
+                //busca un plato
+                PLATO dish = c.GetComponent<PLATO>();
+                if (dish != null)
+                {
+                    //el más cercano
+                    float distance = Vector2.Distance(transform.position, dish.transform.position);
+                    if (distance < lowerDistance)
+                    {
+                        //actualiza el plato
+                        lowerDistance = distance;
+                        nearestDish = dish;
+                    }
                 }
             }
-        }
 
-        if (nearestDish != null)
+            if (nearestDish != null)
+            {
+                //interactua con el plato más cercano
+                nearestDish.OnInteract();
+            }
+        }
+        else if (conPlato)
         {
-            //interactua con el plato más cercano
-            nearestDish.OnInteract();
+            //si tiene un plato
+            //Se busca el plato que es hijo del player
+            PLATO playerDish = transform.GetComponentInChildren<PLATO>();
+
+            //Se interactua con ese plato
+            playerDish.OnInteract();
         }
     }
 }

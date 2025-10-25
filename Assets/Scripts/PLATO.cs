@@ -7,14 +7,14 @@ public class PLATO : MonoBehaviour
 {
     private bool recogido;
 
-    [SerializeField] 
+    [SerializeField]
     private Transform player;
     private CAMARERO camarero;
     private float distancePlayer;
     private float distanceMesa;
 
     [SerializeField]
-    private float rangoInteractuable= 0.8f;
+    private float rangoInteractuable = 0.8f;
 
     private void Awake()
     {
@@ -49,28 +49,35 @@ public class PLATO : MonoBehaviour
         }
     }
 
-    private void RecogerPlato() 
+    private void RecogerPlato()
     {
-        Debug.Log("Recogido");
+        //Cambia los bools
         recogido = true;
         camarero.conPlato = true;
-        //El sprite deja de verse o llevarlo en la mano
+
+        //Se desactiva la collision
+        transform.GetComponent<Collider2D>().enabled = false;
+
+        //Se hace hijo del player para que se mueva con el
+        transform.SetParent(player);
+        transform.position = player.position;
+
     }
 
     private Transform BuscarMesaCercana()
     {
         //Un circle collider para que cada vez que el jugador intente entregar un plato busque las mesas cercanas
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(player.position, rangoInteractuable);
-        
+
         Transform masCercano = null;
-        float distMasCercana = rangoInteractuable+1f;
+        float distMasCercana = rangoInteractuable + 1f;
         string platoTag = transform.gameObject.tag;
 
         //por cada collider en el rango de interaccion
         foreach (var c in hitColliders)
         {
-            //si tiene la misma tag
-            if(c.transform.CompareTag(platoTag))
+            //si tiene la misma tag y es una mesa
+            if (c.transform.CompareTag(platoTag) && c.GetComponent<Mesa>() != null)
             {
                 //calcula la distancia y se queda con el que está más cerca
                 float d = Vector2.Distance(player.position, c.transform.position);
