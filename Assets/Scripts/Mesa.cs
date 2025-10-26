@@ -20,7 +20,7 @@ public class Mesa : MonoBehaviour
             GameManager.Instance.listaMesasLibres.Add(this.gameObject); // Añade la mesa a la lista de mesas libres del gameManager
         }
 
-        setTableStatus(false); // La mesa empieza libre
+        setTableStatus(true); // La mesa empieza libre
     }
 
     // Update is called once per frame
@@ -39,9 +39,9 @@ public class Mesa : MonoBehaviour
          }
     }
 
-    public void setTableStatus (bool isOccuped)
+    public void setTableStatus (bool isFree)
     {
-        isFree = !isOccuped;                
+        this.isFree = isFree;            
         if (isFree)         //Si la mesa está vacía
         {
             image.color = Color.yellow;     //La mesa va a estar amarilla
@@ -55,7 +55,9 @@ public class Mesa : MonoBehaviour
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
-        setTableStatus(false);
+        setTableStatus(true);
+        GameManager.Instance.MesasLibres(this.gameObject);
         Debug.Log("el cliente se fue");
+        GameManager.Instance.ClientesPerdidos();
     }
 }

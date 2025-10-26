@@ -11,7 +11,7 @@ public class Controlador_mesa : MonoBehaviour
     {
         for (int i = 0; i < GameManager.Instance.listaMesasLibres.Count; i++)            //For que recorre la lista de las mesas libres 
         {
-            GameManager.Instance.listaMesasLibres[i].GetComponent<Mesa>().setTableStatus(false); // Mete desde el inicio las mesas en la lista de mesas libres y se asegura de que estén como libres
+            GameManager.Instance.listaMesasLibres[i].GetComponent<Mesa>().setTableStatus(true); // Mete desde el inicio las mesas en la lista de mesas libres y se asegura de que estén como libres
         }
     }
 
@@ -36,8 +36,10 @@ public class Controlador_mesa : MonoBehaviour
         
         if (posibleMesa != null)         
         {
-            posibleMesa.GetComponent<Mesa>().setTableStatus(true);      //Se cambia el status a ocupada
+            posibleMesa.GetComponent<Mesa>().setTableStatus(false);      //Se cambia el status a ocupada
             GameManager.Instance.MesasOcupadas(posibleMesa);     //La mesa que hemos seleccionado se mete en la lista de mesas ocupadas
+            posibleMesa.GetComponent<Mesa>().StartCoroutine("ClienteSeVa");
+
         }
     }
 
