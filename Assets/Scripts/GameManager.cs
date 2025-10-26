@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     public List<GameObject> listaMesasOcupadas = new List<GameObject>();
     public List<GameObject> listaMesasLibres = new List<GameObject>();
 
+    public int platosEntregados = 0;
+    public int platosGanar = 10;
+    public int clientesIdos = 0;
+    public int maxClientesPerdidos = 3;
+
     void Awake()
     {
         if (Instance == null) 
@@ -39,4 +44,34 @@ public class GameManager : MonoBehaviour
             listaMesasOcupadas.Add(mesa); 
         }
     }
+
+    public void PlatoEntregado()
+    {
+        platosEntregados++;
+        
+        if(platosEntregados == platosGanar)
+        {
+            Victoria();
+        }
+    }
+
+    public void ClientesPerdidos()
+    {
+        clientesIdos++;
+        if (clientesIdos == maxClientesPerdidos)
+        {
+            Derrota();
+        }
+    }
+    public void Victoria()
+    {
+        // Cambiar de escena a la de victoria
+
+    }
+
+    public void Derrota()
+    {
+        // Cambiar de escena a la de derrota
+    }
+
 }
