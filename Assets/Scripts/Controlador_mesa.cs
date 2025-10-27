@@ -55,12 +55,12 @@ public class Controlador_mesa : MonoBehaviour
             IntentarSentarCliente();        //Se llama a la función para que arranque
             targetTime = 5;     //Se vuelve a pponer a 5 el temporizador
         }
-        if (GameManager.Instance.listaMesasOcupadas.Count > 0)
+        if (GameManager.Instance.listaMesasOcupadas.Count > 0)      //Comprueba si hay elementos en la lista
         {
-            GameObject mesa = GameManager.Instance.listaMesasOcupadas[0];
-            GameManager.Instance.listaMesasWaiting.Add(mesa);
-            GameManager.Instance.listaMesasOcupadas.RemoveAt(0);  
-            mesa.GetComponent<Mesa>().setPlato(generador.GetComponent<GENERADOR_PLATOS>().CrearPlato(Random.Range(0, 2)));
+            GameObject mesa = GameManager.Instance.listaMesasOcupadas[0];       //Pilla la primera mesa de la lista de las mesas ocupadas y la guarda en mesa
+            GameManager.Instance.listaMesasWaiting.Add(mesa);       //Esa mesa se agrega a otra lista nueva que es la de espera
+            GameManager.Instance.listaMesasOcupadas.RemoveAt(0);        //Quita la nesa de la lista de las mesas ocupadas
+            mesa.GetComponent<Mesa>().setPlato(generador.GetComponent<GENERADOR_PLATOS>().CrearPlato(Random.Range(0, 3)));      //accede al componente mesa y llama ak método setplato así se le asigna uno nuevo. El plato se genera llamando a CrearPlato, se genera el plato aleatoriamente 
         }
     }
 
