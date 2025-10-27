@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +27,11 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject); // Si hay otro gameManager, se borra
         }
+    }
+
+    void Update()
+    {
+        PausaPartida();
     }
 
     public void MesasLibres(GameObject mesa) // Método para añadir las mesas en la lista de mesas libres
@@ -65,13 +72,22 @@ public class GameManager : MonoBehaviour
     }
     public void Victoria()
     {
-        // Cambiar de escena a la de victoria
+        SceneManager.LoadScene("WinMenu");
 
     }
 
     public void Derrota()
     {
-        // Cambiar de escena a la de derrota
+        SceneManager.LoadScene("LoseMenu");
+    }
+
+    public void PausaPartida()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive); // Hace que el menu pausa salga encima de la escena
+            Time.timeScale = 0f; // Para el tiempo
+        }
     }
 
 }

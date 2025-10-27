@@ -6,6 +6,7 @@ public class MainMenuScript : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadSceneAsync(1);
+        Time.timeScale = 1f;
 
     }
     public void Credits()
