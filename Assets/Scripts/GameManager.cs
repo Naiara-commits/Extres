@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> listaMesasOcupadas = new List<GameObject>();
     public List<GameObject> listaMesasLibres = new List<GameObject>();
+    public List<GameObject> listaMesasWaiting = new List<GameObject>();
 
     public int platosEntregados = 0;
     public int platosGanar = 10;

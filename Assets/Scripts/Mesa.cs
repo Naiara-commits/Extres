@@ -12,6 +12,7 @@ public class Mesa : MonoBehaviour
     int tipoDeMesa;
     public GameObject mesa;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,10 +49,16 @@ public class Mesa : MonoBehaviour
         }
         else
         {
-            image.color = Color.red;        //Si está ocupada, la mesa se pondrá roja
-        }
-    }
+            image.color = Color.red;        //Si está ocupada, la mesa se pondrá rojaç
 
+        }
+
+    }
+    
+    public void setPlato (PLATO plato)
+    {
+        image.color = plato.GetComponent<SpriteRenderer>().color;
+    }
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);

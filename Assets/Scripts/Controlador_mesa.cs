@@ -7,6 +7,8 @@ public class Controlador_mesa : MonoBehaviour
     int maxMesas = 2;
     float targetTime = 5;       //El temporizador se inicieliza a 5 por ej
 
+    public GameObject generador;
+
     void Start()
     {
         for (int i = 0; i < GameManager.Instance.listaMesasLibres.Count; i++)            //For que recorre la lista de las mesas libres 
@@ -41,6 +43,7 @@ public class Controlador_mesa : MonoBehaviour
             posibleMesa.GetComponent<Mesa>().StartCoroutine("ClienteSeVa");
 
         }
+
     }
 
     void Update() // Se llama contastemente para poder cambiar las mesas a ocupadas o libres
@@ -51,6 +54,13 @@ public class Controlador_mesa : MonoBehaviour
         {
             IntentarSentarCliente();        //Se llama a la función para que arranque
             targetTime = 5;     //Se vuelve a pponer a 5 el temporizador
+        }
+        if (GameManager.Instance.listaMesasOcupadas.Count > 0)
+        {
+            GameObject mesa = GameManager.Instance.listaMesasOcupadas[0];
+            GameManager.Instance.listaMesasWaiting.Add(mesa);
+            GameManager.Instance.listaMesasOcupadas.RemoveAt(0);  
+            mesa.GetComponent<Mesa>().setPlato(generador.GetComponent<GENERADOR_PLATOS>().CrearPlato(Random.Range(0, 2)));
         }
     }
 

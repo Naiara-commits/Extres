@@ -16,7 +16,7 @@ public class GENERADOR_PLATOS : MonoBehaviour
 
     GameObject prefab;
 
-    public PLATO CrearPlato(int tipo)
+    public  PLATO CrearPlato(int tipo)
     {
         prefab = null;
 
@@ -46,4 +46,6 @@ public class GENERADOR_PLATOS : MonoBehaviour
 
         return plato;
     }
+
+    
 }
