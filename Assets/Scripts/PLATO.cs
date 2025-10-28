@@ -95,8 +95,8 @@ public class PLATO : MonoBehaviour
 
     private void EntregarPlato(Transform mesaEntregar)
     {
+        mesaEntregar.GetComponent<Mesa>().platoEntregado();
         //Entrega el plato a la mesa
-        GameManager.Instance.PlatoEntregado();
         camarero.conPlato = false;
         //Destruye el plato
         Destroy(gameObject);

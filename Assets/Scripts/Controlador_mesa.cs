@@ -64,10 +64,9 @@ public class Controlador_mesa : MonoBehaviour
             mesa.GetComponent<Mesa>().setPlato(generador.GetComponent<GENERADOR_PLATOS>().CrearPlato(tipoDeMesa));      //accede al componente mesa y llama ak método setplato así se le asigna uno nuevo. El plato se genera llamando a CrearPlato, se genera el plato aleatoriamente 
             mesa.gameObject.tag = tipoDeMesa.ToString(); //Pone la tag de la mesa a su tipo para poder entregar el plato
         }
+        
     }
 
-    IEnumerator ClienteCambia()
-    {
-        yield return new WaitForSeconds(10f);
-    }
+  
+    
 }

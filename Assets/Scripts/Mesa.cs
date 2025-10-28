@@ -11,7 +11,8 @@ public class Mesa : MonoBehaviour
     
     int tipoDeMesa;
     public GameObject mesa;
-
+    bool platoServido;
+    private Coroutine corutinaActual;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,12 +41,36 @@ public class Mesa : MonoBehaviour
     {
         image.color = plato.GetComponent<SpriteRenderer>().color;
     }
+
+    public void platoEntregado()
+    {
+        platoServido = true;
+        StartCoroutine("ClienteSatisfecho");
+    }
+  
+
+
     IEnumerator ClienteSeVa()
     {
         yield return new WaitForSeconds(10f);
+        if(!platoServido)
+        {
+            setTableStatus(true);
+            GameManager.Instance.MesasLibres(this.gameObject);
+            Debug.Log("el cliente se fue");
+            GameManager.Instance.ClientesPerdidos();
+
+        }
+        platoServido = false;
+    }
+    IEnumerator ClienteSatisfecho()
+    {
+        yield return new WaitForSeconds(4f);
         setTableStatus(true);
         GameManager.Instance.MesasLibres(this.gameObject);
-        Debug.Log("el cliente se fue");
-        GameManager.Instance.ClientesPerdidos();
+        Debug.Log("cliente feliz");
+        GameManager.Instance.PlatoEntregado();
     }
+    
+     
 }
