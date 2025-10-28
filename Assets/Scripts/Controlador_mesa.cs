@@ -21,7 +21,7 @@ public class Controlador_mesa : MonoBehaviour
     {
         GameObject posibleMesa = null;      //Se crea un objeto 
        
-        if (GameManager.Instance.listaMesasOcupadas.Count >= maxMesas && GameManager.Instance.listaMesasLibres.Count <= 0) // Si la cantidad de mesas ocupadas es menor a 2
+        if (GameManager.Instance.listaMesasOcupadas.Count >= maxMesas && GameManager.Instance.listaMesasLibres.Count <= 2) // Si la cantidad de mesas ocupadas es menor a 2
         {
             return;
         }
@@ -54,6 +54,7 @@ public class Controlador_mesa : MonoBehaviour
         {
             IntentarSentarCliente();        //Se llama a la función para que arranque
             targetTime = 5;     //Se vuelve a pponer a 5 el temporizador
+            Debug.Log("bbbbb");
         }
         if (GameManager.Instance.listaMesasOcupadas.Count > 0)      //Comprueba si hay elementos en la lista
         {

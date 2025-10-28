@@ -38,7 +38,7 @@ public class GENERADOR_PLATOS : MonoBehaviour
                 return null;
         }
         //Crea un objeto del caso que se haya llamado
-        GameObject platoCreado = Instantiate(prefab, transform.position, Quaternion.identity);
+        GameObject platoCreado = Instantiate(prefab, transform.position + Vector3.back, Quaternion.identity);
 
         //se entra a la clase plato para setear el player
         PLATO plato = platoCreado.GetComponent<PLATO>();

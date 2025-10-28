@@ -62,6 +62,7 @@ public class Mesa : MonoBehaviour
 
         }
         platoServido = false;
+        Debug.Log("listamesaslibres" + GameManager.Instance.listaMesasLibres);
     }
     IEnumerator ClienteSatisfecho()
     {
@@ -71,6 +72,6 @@ public class Mesa : MonoBehaviour
         Debug.Log("cliente feliz");
         GameManager.Instance.PlatoEntregado();
     }
-    
+    //Debug.Log("listamesasocupadas" + Game)
      
 }
