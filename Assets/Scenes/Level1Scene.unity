@@ -528,6 +528,11 @@ MonoBehaviour:
   controlador: {fileID: 1741495978}
   listaMesasOcupadas: []
   listaMesasLibres: []
+  listaMesasWaiting: []
+  platosEntregados: 0
+  platosGanar: 10
+  clientesIdos: 0
+  maxClientesPerdidos: 3
 --- !u!1 &1137692431
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f584fe805f2cee642836e5dfff1bdfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  generador: {fileID: 2087257413}
 --- !u!4 &1741495979
 Transform:
   m_ObjectHideFlags: 0

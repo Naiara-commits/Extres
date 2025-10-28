@@ -60,7 +60,9 @@ public class Controlador_mesa : MonoBehaviour
             GameObject mesa = GameManager.Instance.listaMesasOcupadas[0];       //Pilla la primera mesa de la lista de las mesas ocupadas y la guarda en mesa
             GameManager.Instance.listaMesasWaiting.Add(mesa);       //Esa mesa se agrega a otra lista nueva que es la de espera
             GameManager.Instance.listaMesasOcupadas.RemoveAt(0);        //Quita la nesa de la lista de las mesas ocupadas
-            mesa.GetComponent<Mesa>().setPlato(generador.GetComponent<GENERADOR_PLATOS>().CrearPlato(Random.Range(0, 3)));      //accede al componente mesa y llama ak método setplato así se le asigna uno nuevo. El plato se genera llamando a CrearPlato, se genera el plato aleatoriamente 
+            int tipoDeMesa = Random.Range(0, 3); //El tipo de mesa es aleatorio
+            mesa.GetComponent<Mesa>().setPlato(generador.GetComponent<GENERADOR_PLATOS>().CrearPlato(tipoDeMesa));      //accede al componente mesa y llama ak método setplato así se le asigna uno nuevo. El plato se genera llamando a CrearPlato, se genera el plato aleatoriamente 
+            mesa.gameObject.tag = tipoDeMesa.ToString(); //Pone la tag de la mesa a su tipo para poder entregar el plato
         }
     }
 
