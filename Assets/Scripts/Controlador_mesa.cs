@@ -33,7 +33,10 @@ public class Controlador_mesa : MonoBehaviour
                 int mesaAleatoria = Random.Range(0, GameManager.Instance.listaMesasLibres.Count); // Int para que se coja una mesa aleatoria de la lista y no se pongan en el mismo orden
                 posibleMesa = GameManager.Instance.listaMesasLibres [mesaAleatoria];     //La posible mesa que será la mesa que se vaya a usar es la que se ha encontrado en la lista
                 break;
-           }
+            }
+            else
+            {
+            }
         }
         
         if (posibleMesa != null)         
@@ -42,6 +45,9 @@ public class Controlador_mesa : MonoBehaviour
             GameManager.Instance.MesasOcupadas(posibleMesa);     //La mesa que hemos seleccionado se mete en la lista de mesas ocupadas
             posibleMesa.GetComponent<Mesa>().StartCoroutine("ClienteSeVa");
 
+        }
+        else
+        {
         }
 
     }
@@ -54,7 +60,6 @@ public class Controlador_mesa : MonoBehaviour
         {
             IntentarSentarCliente();        //Se llama a la función para que arranque
             targetTime = 5;     //Se vuelve a pponer a 5 el temporizador
-            Debug.Log("bbbbb");
         }
         if (GameManager.Instance.listaMesasOcupadas.Count > 0)      //Comprueba si hay elementos en la lista
         {
@@ -66,8 +71,5 @@ public class Controlador_mesa : MonoBehaviour
             mesa.gameObject.tag = tipoDeMesa.ToString(); //Pone la tag de la mesa a su tipo para poder entregar el plato
         }
         
-    }
-
-  
-    
+    }  
 }

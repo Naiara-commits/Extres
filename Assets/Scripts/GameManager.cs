@@ -37,20 +37,23 @@ public class GameManager : MonoBehaviour
 
     public void MesasLibres(GameObject mesa) // Método para añadir las mesas en la lista de mesas libres
     {
-        if (listaMesasOcupadas.Contains(mesa)) // Si la mesa  está en la lista de mesas ocuapadas
+        if (listaMesasWaiting.Contains(mesa)) // Si la mesa  está en la lista de mesas ocuapadas
         {
-            listaMesasOcupadas.Remove(mesa);
+            listaMesasWaiting.Remove(mesa);
             listaMesasLibres.Add(mesa);
         }
+        
     }
 
     public void MesasOcupadas(GameObject mesa) // Método para añadir las mesas en la lista de mesas ocupadas
     {
         if (listaMesasLibres.Contains(mesa)) // Si la mesa está en la lista de mesas libres
         {
+    
             listaMesasLibres.Remove(mesa);
-            listaMesasOcupadas.Add(mesa); 
+            listaMesasOcupadas.Add(mesa);
         }
+       
     }
 
     public void PlatoEntregado()

@@ -57,21 +57,17 @@ public class Mesa : MonoBehaviour
         {
             setTableStatus(true);
             GameManager.Instance.MesasLibres(this.gameObject);
-            Debug.Log("el cliente se fue");
             GameManager.Instance.ClientesPerdidos();
 
         }
         platoServido = false;
-        Debug.Log("listamesaslibres" + GameManager.Instance.listaMesasLibres);
     }
     IEnumerator ClienteSatisfecho()
     {
         yield return new WaitForSeconds(4f);
         setTableStatus(true);
         GameManager.Instance.MesasLibres(this.gameObject);
-        Debug.Log("cliente feliz");
         GameManager.Instance.PlatoEntregado();
     }
-    //Debug.Log("listamesasocupadas" + Game)
      
 }
