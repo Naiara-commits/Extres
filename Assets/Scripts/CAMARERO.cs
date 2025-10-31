@@ -14,7 +14,7 @@ public class CAMARERO : MonoBehaviour
 
     [SerializeField]
     private float rangoInteractuable = 0.8f;
-
+    public Animator animator;
 
     void Start()
     {
@@ -25,6 +25,9 @@ public class CAMARERO : MonoBehaviour
     void Update()
     {
         movementDirection = playerInput.actions["Move"].ReadValue<Vector2>();
+
+        animator.SetFloat("MoveX", movementDirection.x);
+        animator.SetFloat("MoveY", movementDirection.y);
     }
     private void FixedUpdate()
     {
