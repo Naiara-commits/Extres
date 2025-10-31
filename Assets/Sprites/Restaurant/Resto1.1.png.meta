@@ -1,0 +1,1781 @@
+fileFormatVersion: 2
+guid: 1aa29c2fe0ddb1a49b60323c296a89b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2752379690656110866
+    second: Resto1.1_0
+  - first:
+      213: 3564314895484155317
+    second: Resto1.1_1
+  - first:
+      213: 8998369421503046670
+    second: Resto1.1_2
+  - first:
+      213: -4743877807136558576
+    second: Resto1.1_3
+  - first:
+      213: -2383317174400770162
+    second: Resto1.1_4
+  - first:
+      213: -4696781411541065109
+    second: Resto1.1_5
+  - first:
+      213: 6984632907031185170
+    second: Resto1.1_6
+  - first:
+      213: -6238579591608132365
+    second: Resto1.1_7
+  - first:
+      213: 5457116924785988725
+    second: Resto1.1_8
+  - first:
+      213: -3511047104771640977
+    second: Resto1.1_9
+  - first:
+      213: 2773550965896111513
+    second: Resto1.1_10
+  - first:
+      213: -6615837873303501254
+    second: Resto1.1_11
+  - first:
+      213: -7126907587597687938
+    second: Resto1.1_12
+  - first:
+      213: -6653995788129261562
+    second: Resto1.1_13
+  - first:
+      213: -9010083772116368921
+    second: Resto1.1_14
+  - first:
+      213: -3864471975427380202
+    second: Resto1.1_15
+  - first:
+      213: -2639699005290206233
+    second: Resto1.1_16
+  - first:
+      213: -2752212698644948200
+    second: Resto1.1_17
+  - first:
+      213: -1355957754173833936
+    second: Resto1.1_18
+  - first:
+      213: -7594927617584187898
+    second: Resto1.1_19
+  - first:
+      213: 1865595049339975722
+    second: Resto1.1_20
+  - first:
+      213: 320724574892314621
+    second: Resto1.1_21
+  - first:
+      213: 5897922258272718750
+    second: Resto1.1_22
+  - first:
+      213: 5242769796788239683
+    second: Resto1.1_23
+  - first:
+      213: 366809163230971719
+    second: Resto1.1_24
+  - first:
+      213: 5696889341583795142
+    second: Resto1.1_25
+  - first:
+      213: 8131399525781011840
+    second: Resto1.1_26
+  - first:
+      213: 4435392702200166374
+    second: Resto1.1_27
+  - first:
+      213: 2819332731649365982
+    second: Resto1.1_28
+  - first:
+      213: 2535361723498842250
+    second: Resto1.1_29
+  - first:
+      213: -5042523594930615575
+    second: Resto1.1_30
+  - first:
+      213: -4303352047373441140
+    second: Resto1.1_31
+  - first:
+      213: 4956198592638340993
+    second: Resto1.1_32
+  - first:
+      213: -4511327022657814284
+    second: Resto1.1_33
+  - first:
+      213: -194205460116993314
+    second: Resto1.1_34
+  - first:
+      213: -3059741929463544811
+    second: Resto1.1_35
+  - first:
+      213: -4486334538755156706
+    second: Resto1.1_36
+  - first:
+      213: -7581831941609533021
+    second: Resto1.1_37
+  - first:
+      213: 8269677289820025566
+    second: Resto1.1_38
+  - first:
+      213: 4604025047687624607
+    second: Resto1.1_39
+  - first:
+      213: -5017793351169378479
+    second: Resto1.1_40
+  - first:
+      213: -345869934165534604
+    second: Resto1.1_41
+  - first:
+      213: 5903885533996374153
+    second: Resto1.1_42
+  - first:
+      213: -3263141034169497178
+    second: Resto1.1_43
+  - first:
+      213: 2860963831367450445
+    second: Resto1.1_44
+  - first:
+      213: -8121512553787856552
+    second: Resto1.1_45
+  - first:
+      213: 6618674357691462386
+    second: Resto1.1_46
+  - first:
+      213: 1422725252750900796
+    second: Resto1.1_47
+  - first:
+      213: -2574955861759368000
+    second: Resto1.1_48
+  - first:
+      213: -1542589852174251752
+    second: Resto1.1_49
+  - first:
+      213: -3618275477418616393
+    second: Resto1.1_50
+  - first:
+      213: 1772137688244245414
+    second: Resto1.1_51
+  - first:
+      213: 4946597880180208150
+    second: Resto1.1_52
+  - first:
+      213: -7828827718147224893
+    second: Resto1.1_53
+  - first:
+      213: -1836968395622080734
+    second: Resto1.1_54
+  - first:
+      213: 4440132959936979114
+    second: Resto1.1_55
+  - first:
+      213: -4672063529232451374
+    second: Resto1.1_56
+  - first:
+      213: -6260604724783701823
+    second: Resto1.1_57
+  - first:
+      213: -2092356846400506692
+    second: Resto1.1_58
+  - first:
+      213: -38574720567410463
+    second: Resto1.1_59
+  - first:
+      213: 921614799882910696
+    second: Resto1.1_60
+  - first:
+      213: -2495856657509469066
+    second: Resto1.1_61
+  - first:
+      213: 6517176928412141122
+    second: Resto1.1_62
+  - first:
+      213: 4632744699816154958
+    second: Resto1.1_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Resto1.1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 287
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6617b01459dc9d0800000000000000
+      internalID: -2752379690656110866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 287
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b577fc438df67130800000000000000
+      internalID: 3564314895484155317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 255
+        width: 34
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e042d6e3051a0ec70800000000000000
+      internalID: 8998369421503046670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 271
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01234cfb44c5a2eb0800000000000000
+      internalID: -4743877807136558576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 255
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f11c048a1cceed0800000000000000
+      internalID: -2383317174400770162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 255
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62ef69d03ea1deb0800000000000000
+      internalID: -4696781411541065109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_6
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 255
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217091e6f966ee060800000000000000
+      internalID: 6984632907031185170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 255
+        width: 34
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc12333aec1c69a0800000000000000
+      internalID: -6238579591608132365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_8
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 255
+        width: 98
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57414a71ee29bbb40800000000000000
+      internalID: 5457116924785988725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 191
+        width: 130
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f613c62b241464fc0800000000000000
+      internalID: -3511047104771640977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_10
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 143
+        width: 16
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995eda898e1ad7620800000000000000
+      internalID: 2773550965896111513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 143
+        width: 16
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a364b26a182df24a0800000000000000
+      internalID: -6615837873303501254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 207
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73243e1f43281d90800000000000000
+      internalID: -7126907587597687938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_13
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 207
+        width: 66
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6082c97c51248a3a0800000000000000
+      internalID: -6653995788129261562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_14
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 179
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e10e76fb80c5f280800000000000000
+      internalID: -9010083772116368921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 191
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ce2349633ae5ac0800000000000000
+      internalID: -3864471975427380202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_16
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 191
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eba9bb8db7ed5bd0800000000000000
+      internalID: -2639699005290206233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 163
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bd2f6e12d2ec9d0800000000000000
+      internalID: -2752212698644948200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_18
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 127
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d38045b9bae2de0800000000000000
+      internalID: -1355957754173833936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606371b4295699690800000000000000
+      internalID: -7594927617584187898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 127
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28f2a220dce3e910800000000000000
+      internalID: 1865595049339975722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 162
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffc1353d41737400800000000000000
+      internalID: 320724574892314621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_22
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 159
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f073d9b01a9d150800000000000000
+      internalID: 5897922258272718750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_23
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 159
+        width: 66
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34db5b05a5f02c840800000000000000
+      internalID: 5242769796788239683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_24
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 143
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7478db29dfa271500800000000000000
+      internalID: 366809163230971719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_25
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 139
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3afc93caa6f0f40800000000000000
+      internalID: 5696889341583795142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_26
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 143
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08df4f469c888d070800000000000000
+      internalID: 8131399525781011840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 116
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e73006b92ead8d30800000000000000
+      internalID: 4435392702200166374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_28
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 116
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed797959e28402720800000000000000
+      internalID: 2819332731649365982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 95
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88454afd0a6f2320800000000000000
+      internalID: 2535361723498842250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 95
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea82a0c18b550ab0800000000000000
+      internalID: -5042523594930615575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 127
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c872bd0fc1c6744c0800000000000000
+      internalID: -4303352047373441140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_32
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 127
+        width: 66
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fcf766c54f7c440800000000000000
+      internalID: 4956198592638340993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_33
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 84
+        width: 86
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f04cd499fb8461c0800000000000000
+      internalID: -4511327022657814284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_34
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 95
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda0948b92b0e4df0800000000000000
+      internalID: -194205460116993314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_35
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 95
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51405f52dec9985d0800000000000000
+      internalID: -3059741929463544811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_36
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 95
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15dee1b1865db1c0800000000000000
+      internalID: -4486334538755156706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_37
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 95
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a157a5f40ce7c690800000000000000
+      internalID: -7581831941609533021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_38
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 95
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed276d23eabc3c270800000000000000
+      internalID: 8269677289820025566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_39
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 95
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97fb604368c4ef30800000000000000
+      internalID: 4604025047687624607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_40
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 79
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1577b3358873d5ab0800000000000000
+      internalID: -5017793351169378479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_41
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 47
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478539b9029333bf0800000000000000
+      internalID: -345869934165534604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_42
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 79
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988db60fc90dee150800000000000000
+      internalID: 5903885533996374153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 79
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9835ea48ef6b2d0800000000000000
+      internalID: -3263141034169497178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_44
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 80
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fb5e3527f24b720800000000000000
+      internalID: 2860963831367450445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_45
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 30
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8596998ac579a4f80800000000000000
+      internalID: -8121512553787856552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_46
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 112
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2bf26d2414adb50800000000000000
+      internalID: 6618674357691462386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_47
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 47
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ef13754198eb310800000000000000
+      internalID: 1422725252750900796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_48
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 31
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4e583594be34cd0800000000000000
+      internalID: -2574955861759368000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_49
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 48
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8190803d3be979ae0800000000000000
+      internalID: -1542589852174251752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_50
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 48
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9d4fcaf9d49cdc0800000000000000
+      internalID: -3618275477418616393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_51
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 48
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a351e896d5e79810800000000000000
+      internalID: 1772137688244245414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_52
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 47
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61277d65098d5a440800000000000000
+      internalID: 4946597880180208150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_53
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca4a145baa6a5390800000000000000
+      internalID: -7828827718147224893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_54
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 65
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f93531af6c186e0800000000000000
+      internalID: -1836968395622080734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_55
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 63
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa02c88f6658e9d30800000000000000
+      internalID: 4440132959936979114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_56
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 50
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8ba0c49fe792fb0800000000000000
+      internalID: -4672063529232451374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_57
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 47
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0a2244c2ddd19a0800000000000000
+      internalID: -6260604724783701823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_58
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 15
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4f0f2b88476f2e0800000000000000
+      internalID: -2092356846400506692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_59
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 15
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0054bfe74f67ff0800000000000000
+      internalID: -38574720567410463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_60
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 20
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb73ce07cb3acc00800000000000000
+      internalID: 921614799882910696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_61
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 19
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674bad6f79fec5dd0800000000000000
+      internalID: -2495856657509469066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_62
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 31
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246806c03e9a17a50800000000000000
+      internalID: 6517176928412141122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resto1.1_63
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 18
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e479d9752c0da4040800000000000000
+      internalID: 4632744699816154958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Resto1.1_0: -2752379690656110866
+      Resto1.1_1: 3564314895484155317
+      Resto1.1_10: 2773550965896111513
+      Resto1.1_11: -6615837873303501254
+      Resto1.1_12: -7126907587597687938
+      Resto1.1_13: -6653995788129261562
+      Resto1.1_14: -9010083772116368921
+      Resto1.1_15: -3864471975427380202
+      Resto1.1_16: -2639699005290206233
+      Resto1.1_17: -2752212698644948200
+      Resto1.1_18: -1355957754173833936
+      Resto1.1_19: -7594927617584187898
+      Resto1.1_2: 8998369421503046670
+      Resto1.1_20: 1865595049339975722
+      Resto1.1_21: 320724574892314621
+      Resto1.1_22: 5897922258272718750
+      Resto1.1_23: 5242769796788239683
+      Resto1.1_24: 366809163230971719
+      Resto1.1_25: 5696889341583795142
+      Resto1.1_26: 8131399525781011840
+      Resto1.1_27: 4435392702200166374
+      Resto1.1_28: 2819332731649365982
+      Resto1.1_29: 2535361723498842250
+      Resto1.1_3: -4743877807136558576
+      Resto1.1_30: -5042523594930615575
+      Resto1.1_31: -4303352047373441140
+      Resto1.1_32: 4956198592638340993
+      Resto1.1_33: -4511327022657814284
+      Resto1.1_34: -194205460116993314
+      Resto1.1_35: -3059741929463544811
+      Resto1.1_36: -4486334538755156706
+      Resto1.1_37: -7581831941609533021
+      Resto1.1_38: 8269677289820025566
+      Resto1.1_39: 4604025047687624607
+      Resto1.1_4: -2383317174400770162
+      Resto1.1_40: -5017793351169378479
+      Resto1.1_41: -345869934165534604
+      Resto1.1_42: 5903885533996374153
+      Resto1.1_43: -3263141034169497178
+      Resto1.1_44: 2860963831367450445
+      Resto1.1_45: -8121512553787856552
+      Resto1.1_46: 6618674357691462386
+      Resto1.1_47: 1422725252750900796
+      Resto1.1_48: -2574955861759368000
+      Resto1.1_49: -1542589852174251752
+      Resto1.1_5: -4696781411541065109
+      Resto1.1_50: -3618275477418616393
+      Resto1.1_51: 1772137688244245414
+      Resto1.1_52: 4946597880180208150
+      Resto1.1_53: -7828827718147224893
+      Resto1.1_54: -1836968395622080734
+      Resto1.1_55: 4440132959936979114
+      Resto1.1_56: -4672063529232451374
+      Resto1.1_57: -6260604724783701823
+      Resto1.1_58: -2092356846400506692
+      Resto1.1_59: -38574720567410463
+      Resto1.1_6: 6984632907031185170
+      Resto1.1_60: 921614799882910696
+      Resto1.1_61: -2495856657509469066
+      Resto1.1_62: 6517176928412141122
+      Resto1.1_63: 4632744699816154958
+      Resto1.1_7: -6238579591608132365
+      Resto1.1_8: 5457116924785988725
+      Resto1.1_9: -3511047104771640977
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
