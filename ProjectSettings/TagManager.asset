@@ -44,5 +44,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 3217314605
+    locked: 0
+  - name: Walls
+    uniqueID: 10095947
+    locked: 0
+  - name: Chairs
+    uniqueID: 272569447
+    locked: 0
+  - name: Table/Generator
+    uniqueID: 4237559577
+    locked: 0
+  - name: Player
+    uniqueID: 3977329931
+    locked: 0
+  - name: Dishes
+    uniqueID: 699286143
+    locked: 0
   m_RenderingLayers:
   - Default
