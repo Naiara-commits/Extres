@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor;
+using System;
 
 public class Mesa : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class Mesa : MonoBehaviour
     public GameObject mesa;
     bool platoServido;
     private Coroutine corutinaActual;
-
+    public PLATO plato;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -39,6 +41,7 @@ public class Mesa : MonoBehaviour
     
     public void setPlato (PLATO plato)
     {
+        this.plato = plato;
         image.color = plato.GetComponent<SpriteRenderer>().color;
     }
 
@@ -56,6 +59,8 @@ public class Mesa : MonoBehaviour
         if(!platoServido)
         {
             setTableStatus(true);
+            plato.camarero.conPlato = false;
+            Destroy(plato.gameObject);
             GameManager.Instance.MesasLibres(this.gameObject);
             GameManager.Instance.ClientesPerdidos();
 

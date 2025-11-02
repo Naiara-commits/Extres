@@ -9,7 +9,7 @@ public class PLATO : MonoBehaviour
 
     [SerializeField]
     private Transform player;
-    private CAMARERO camarero;
+    public CAMARERO camarero;
     private float distancePlayer;
     private float distanceMesa;
 

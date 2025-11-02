@@ -5,11 +5,11 @@ using UnityEngine;
 public class GENERADOR_PLATOS : MonoBehaviour
 {
     [SerializeField] 
-    private GameObject platoRojoPrefab;
+    public GameObject platoRojoPrefab;
     [SerializeField] 
-    private GameObject platoAzulPrefab;
+    public GameObject platoAzulPrefab;
     [SerializeField] 
-    private GameObject platoNaranjaPrefab;
+    public GameObject platoNaranjaPrefab;
 
     [SerializeField] 
     private Transform player;

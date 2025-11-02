@@ -10,7 +10,6 @@ public class CAMARERO : MonoBehaviour
     private BoxCollider2D bc;
 
     public bool conPlato;
-    PLATO plato;
 
     [SerializeField]
     private float rangoInteractuable = 0.8f;
